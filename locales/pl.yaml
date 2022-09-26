@@ -1,0 +1,91 @@
+{
+  button:
+    {
+      about: "O nas",
+      back: "Wróć",
+      go: "Wejdź",
+      home: "Strona główna",
+      toggle_dark: "Ustaw tryb nocny",
+      toggle_langs: "Zmień język",
+    },
+  intro:
+    {
+      desc: "Opiniowany szablon startowy Vite",
+      dynamic-route: "Demonstracja dynamicznego route",
+      hi: "Cześć, {name}!",
+      aka: "Znany też jako",
+      whats-your-name: "Jak masz na imię?",
+    },
+  not-found: "Nie znaleziono",
+  about:
+    {
+      occupation: dietetyk,
+      description: Sint enim eu fugiat veniam sint cillum id minim. Incididunt veniam in velit anim est. Commodo in culpa anim aliquip. Consequat ullamco nostrud consequat excepteur enim labore ea. Adipisicing fugiat dolore in quis do mollit. Elit mollit id magna nostrud amet ullamco ad nisi voluptate ea proident.,
+      cards:
+        {
+          lose-weight: "Strać wagę",
+          gain-muscle: "Zwiększ mięśnie",
+          various-illnesses: "Różne choroby",
+        },
+      descriptions:
+        [
+          {
+            "heading": "Przygotowanie",
+            "text": "Reprehenderit fugiat est aliquip voluptate cupidatat. Lorem nulla commodo duis quis. Excepteur consectetur laboris mollit anim in in eu et ut tempor consequat pariatur amet. Est id ullamco ea pariatur. Anim nulla culpa eu anim adipisicing mollit incididunt in velit. Occaecat eiusmod nisi exercitation nostrud fugiat aliquip ex aute nulla minim tempor velit labore et. Elit proident est consectetur enim cupidatat incididunt deserunt laboris adipisicing aliqua",
+          },
+          {
+            "heading": "Urzymanie harmonogramu",
+            "text": "Sit non id proident dolor laboris dolor ex fugiat. Eiusmod ad ipsum sint nostrud incididunt id commodo adipisicing enim adipisicing. Nulla anim irure ipsum cillum fugiat aliqua sunt sunt cupidatat deserunt anim qui laboris excepteur. Ad cillum exercitation laborum incididunt sit est id aliquip dolore nisi consequat.",
+          },
+          {
+            "heading": "Ocena wyników",
+            "text": "Aliquip ad excepteur esse laborum anim aute ex consectetur. Proident nostrud non non nostrud ut veniam nisi. Incididunt reprehenderit consectetur anim qui ullamco. Consectetur labore sunt enim consectetur. Sunt consectetur excepteur velit commodo adipisicing aute occaecat in ipsum ipsum reprehenderit.",
+          },
+        ],
+    },
+  plans:
+    {
+      firstVisit:
+        { name: "Pierwsza wizyta", points: ["test1", "test2", "test3"] },
+      nextVisit:
+        { name: "Kolejna wizyta", points: ["test1", "test2", "test3"] },
+    },
+  recipes:
+    {
+      name: "Przepisy",
+      text: "Duis proident aliqua voluptate sunt sunt. Exercitation ex veniam elit elit proident Lorem. Culpa proident ea in magna ipsum sint. Consectetur qui deserunt Lorem nulla magna aute reprehenderit nulla non culpa tempor veniam. Fugiat sint cillum reprehenderit cupidatat dolor elit enim ullamco eu cillum mollit non occaecat. Excepteur sunt aliqua laboris pariatur velit ut officia est. Ea duis esse ea fugiat sit mollit eu culpa dolor nostrud velit ea.a",
+      testimonials:
+        [
+          {
+            name: "Sam Ryan",
+            text: "Sunt officia culpa deserunt ipsum sit officia dolore. Aute eiusmod id voluptate anim deserunt deserunt ipsum ad quis adipisicing nostrud. Minim in cillum labore eiusmod.",
+          },
+          {
+            name: "Mark Greenberg",
+            text: "Reprehenderit ea velit dolor ipsum irure sint sint elit incididunt minim et excepteur velit. Ullamco ad incididunt voluptate dolor cupidatat ullamco et cillum reprehenderit irure anim amet. Officia adipisicing tempor tempor dolore ad esse qui tempor aliqua voluptate sint. Do nulla dolore exercitation cillum est excepteur. Velit eiusmod aliqua qui nulla enim cillum irure labore. Do amet eu irure elit consectetur deserunt eu cillum sunt sit aute reprehenderit nostrud. Ex laborum cupidatat sint do nisi aliquip nisi.",
+          },
+          {
+            name: "Tom Jackson",
+            text: "Duis proident aliqua voluptate sunt sunt. Exercitation ex veniam elit elit proident Lorem. Culpa proident ea in magna ipsum sint. Consectetur qui deserunt Lorem nulla magna aute reprehenderit nulla non culpa tempor veniam. Fugiat sint cillum reprehenderit cupidatat dolor elit enim ullamco eu cillum mollit non occaecat. Excepteur sunt aliqua laboris pariatur velit ut officia est. Ea duis esse ea fugiat sit mollit eu culpa dolor nostrud velit ea.a",
+          },
+        ],
+    },
+
+  "navbar":
+    {
+      "about": "O nas",
+      "contact": "Kontakt",
+      "pricing": "Ceny",
+      "blogs": "Blog",
+      "language": "Język",
+    },
+
+  "LandingPage":
+    {
+      "description": "Sint enim eu fugiat veniam sint cillum id minim. Incididunt veniam in velit anim est. Commodo in culpa anim aliquip. Consequat ullamco nostrud consequat excepteur enim labore ea. Adipisicing fugiat dolore in quis do mollit. Elit mollit id magna nostrud amet ullamco ad nisi voluptate ea proident.",
+      "receive-blogs-posts": "receive blog posts",
+      "sign-up": "Zarejestruj się",
+    },
+  "Footer": { "description": "Dolore occaecat anim ex sunt do." },
+  ReadMore: "Czytaj więcej"
+}
