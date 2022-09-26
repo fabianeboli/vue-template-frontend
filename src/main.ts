@@ -7,8 +7,8 @@ import App from './App.vue'
 const routes = setupLayouts(generatedRoutes);
 
 
-import OpenLayersMap from 'vue3-openlayers';
-import 'vue3-openlayers/dist/vue3-openlayers.css';
+// import OpenLayersMap from 'vue3-openlayers';
+// import 'vue3-openlayers/dist/vue3-openlayers.css';
 
 
 // https://github.com/antfu/vite-ssg
@@ -19,6 +19,6 @@ export const createApp = ViteSSG(
     // install all modules under `modules/`
     Object.values(import.meta.globEager('./modules/*.ts')).forEach(i => i.install?.(ctx))
     const { app } = ctx;
-    app.use(OpenLayersMap);
+    // app.use(OpenLayersMap);
   },
 )

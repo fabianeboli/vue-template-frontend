@@ -54,7 +54,7 @@ const { firstName, lastName, facebookLink, instagramLink, description, streetNam
 
         <section class="mt-16 text-neutral-400">{{ description }}</section>
       </div>
-      <Map class="my-10 rounded-md"/>
+      <!-- <Map class="my-10 rounded-md"/> -->
     </div>
   </div>
   <!-- <nav class="text-xl mt-6">
