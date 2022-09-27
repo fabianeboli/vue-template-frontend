@@ -28,9 +28,9 @@ onMounted(() => (imageFormat.value = chooseImageFormat(image)));
       <p class="text-md my-2 text-neutral-500 mx-10">{{ text }}</p>
 
       <div class="flex flex-col items-center">
-        <router-link :to="`/blogs/${id?.toString()}`" replace>
+        <router-link :to="`/blogs/${id}`" replace>
           <button
-            class="rounded-full mt-20 bg-myOrange-200 text-white text-xl pss=bg-myTeal-3000rounded-full mx-5 px-10 py-1 my-7"
+            class="rounded-full mt-20 bg-myOrange-200 text-white text-xl pss=bg-myTeal-3000rounded-full shadow-xl-myOrange hover:shadow-md duration-250 mx-5 px-10 py-1 my-7"
           >
             {{t('ReadMore')}}
           </button>

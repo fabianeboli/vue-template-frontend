@@ -21,7 +21,7 @@ onMounted(async () => {
 <template>
   <div class="bg-myNeutral-100">
     <div class="flex justify-between">
-      <h1 class="text-neutral-800 text-3xl mx-10">Blog</h1>
+      <!-- <h1 class="text-neutral-800 text-3xl mx-10">Blog</h1> -->
       <navbar />
     </div>
     <div v-if="errorMessage">{{ errorMessage }}</div>

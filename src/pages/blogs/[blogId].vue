@@ -5,7 +5,7 @@ import { getBlog } from "~/utils/requests";
 const route = useRoute();
 let blogData = ref<IData>();
 let errorMessage = ref<string>("");
-let {locale} = useI18n();
+let { locale } = useI18n();
 
 const getData = async () => {
   const blog = await getBlog(route.params.blogId.toString());
@@ -20,22 +20,23 @@ const getData = async () => {
 onMounted(() => {
   getData();
 });
-// console.log(blogData.value.attributes.image);
 </script>
 
 <template>
   <div class="">
     <navbar />
+    <router-link :to="`/blogs/`" replace>
+      <button
+        class="rounded-full mt-20 bg-myOrange-200 text-white text-xl pss=bg-myTeal-3000rounded-full shadow-lg hover:shadow-md duration-200 relative top-10 left-10 px-5 py-1 ">
+        &lt;
+      </button>
+    </router-link>
+    <div v-if="blogData !== undefined" class="flex justify-center items-center mx-10 xl:mx-104">
 
-    <div
-      v-if="blogData !== undefined"
-      class="flex justify-center items-center mx-10 xl:mx-104"
-    >
+
       <div class="flex flex-col my-24">
-        <img
-          class="w-11/12 mx-5 mt-14 rounded-52 shadow-md"
-          :src="chooseImageFormat(blogData.attributes.image.data.attributes)"
-        />
+        <img class="w-11/12 mx-5 mt-14 rounded-52 shadow-md"
+          :src="chooseImageFormat(blogData.attributes.image.data.attributes)" />
         <div class="text-2xl mx-20 my-4 flex justify-around">
           <p class="text-lg text-myOrange-200 font-bold">
             {{ blogData.attributes.heading }}
@@ -55,4 +56,6 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

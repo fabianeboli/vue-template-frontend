@@ -1,9 +1,14 @@
 <script setup lang="ts">
-const { image, name, description } = defineProps({
+
+const { id, image, name, description } = defineProps({
+  id: String,
   image: String,
   name: String,
   description: String,
 });
+
+
+let { t } = useI18n();
 </script>
 
 <template>
@@ -15,12 +20,21 @@ const { image, name, description } = defineProps({
     <p class="text-neutral-500 px-10 xl:mx-10 my-10 text-center w-96">
       {{ description }}
     </p>
-    <button
-      class="py-2 px-16 my-5 mx-10 bg-myOrange-200 duration-300 rounded-full hover:shadow-lg text-white font-bold shadow-xl-myOrange mb-40 lg:mb-0"
-    >
-      Read more
-    </button>
+    <div>
+      <router-link :to="`/blogs/${id}`" replace>
+        <button
+          class="py-2 px-16 my-5 mx-10 bg-myOrange-200 duration-300 rounded-full hover:shadow-lg text-white font-bold shadow-xl-myOrange mb-40 lg:mb-0">
+          {{t('ReadMore')}}
+        </button>
+      </router-link>
+
+
+    </div>
+
+
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>

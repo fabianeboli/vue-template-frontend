@@ -15,7 +15,7 @@ onMounted(async () => {
 
   if (blogs.isSuccessful && blogs.data !== undefined) {
     blogsData.value = blogs.data as IData[];
-    console.log(blogsData.value[0].attributes.image.data.attributes.formats.medium.url)
+    console.log(blogs.data[0].id, " id")
   } else {
     errorMessage.value = blogs.message;
   }
@@ -32,6 +32,7 @@ onMounted(async () => {
     >
       <li v-for="blog in blogsData">
         <recipe
+          :id="blog.id.toString()"
           :name="blog.attributes.heading"
           :image="chooseImageFormat(blog.attributes.image.data.attributes)"
           :description="blog.attributes.text"

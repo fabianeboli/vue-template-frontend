@@ -17,10 +17,10 @@ import { getVisits, putVisit } from "../../utils/requests";
 const { visit } = defineProps<{ visit: IServiceType }>();
 const { withMessage } = helpers;
 
-let firstName = ref<string>("testF");
-let lastName = ref<string>("testL");
-let email = ref<string>("test@test.com");
-let phoneNumber = ref<string>("123123123");
+let firstName = ref<string>("");
+let lastName = ref<string>("");
+let email = ref<string>("");
+let phoneNumber = ref<string>("");
 let errorMessage = ref<string>("");
 let isError = ref<boolean>(false);
 let isSent = ref<boolean>(false);
@@ -106,7 +106,14 @@ const getVisitType = (value: string) =>
       <h1 class="text-center text-3xl py-10">
         {{ getVisitType($route.params.name.toString()) }}
       </h1>
+      <router-link :to="'/'" replace>
+        <button
+        class="rounded-full bg-myTeal-200 text-white text-xl pss=bg-myTeal-3000 shadow-md hover:shadow-sm duration-200 relative  right-80 p-1">
+			<carbon-chevron-left color="white" />
+      </button>
+    </router-link>
 
+  
       <h1 class="border-b-2 border-neutral-400">Calendar here</h1>
       <visit-calendar />
 
